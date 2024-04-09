@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="5.css">
+</head>
+<body>
+  <body>
+    <div id="psk-page">
+      
+    
+      <div id="login-container">
+    <h2><font color=white>Login</h2>
+    <label for="username">Username:</label>
+    <input type="text" id="username" required>
+
+    <label for="password"><font color=white>Password:</label>
+    <input type="password" id="password" required>
+
+    <p id="error-msg" class="error"></p>
+
+    <button onclick="validateLogin()"><font color=white>Login</button>
+  </div></div>
+
+    
+    <div id="main-page">
+          <form id="xyz" name="submit-to-google-sheet">
+
+       <lable><font color=black>Name Stock</font></lable>
+      <br><input type="text" name="Name" required><br><br>
+      
+                     <lable><font color=black>Value : </lable>
+        <input type="radio" name="Value" value="0"><lable><font color=black>High</lable>
+     
+      <input type="radio" name="Value" value="4"><lable><font color=black>Low</lable>
+<br><br>
+
+<lable><font color=black>Performence : </lable>
+        <input type="radio" name="Performence" value="4"><lable><font color=black>High</lable>
+      <input type="radio" name="Performence" value="2"><lable><font color=black>Avg</lable>
+      <input type="radio" name="Performence" value="0"><lable><font color=black>Low</lable>
+<br><br>
+
+<lable><font color=black>Growth : </lable>
+        <input type="radio" name="Growth" value="4"><lable><font color=black>High</lable>
+      <input type="radio" name="Growth" value="2"><lable><font color=black>Avg</lable>
+      <input type="radio" name="Growth" value="0"><lable><font color=black>Low</lable>
+<br><br>
+
+<lable><font color=black>Profitability : </lable>
+        <input type="radio" name="Profitability" value="6"><lable><font color=black>High</lable>
+      <input type="radio" name="Profitability" value="3"><lable><font color=black>Avg</lable>
+      <input type="radio" name="Profitability" value="0"><lable><font color=black>Low</lable>
+<br><br>
+
+      <lable><font color=black>Entry Point : </lable>
+        <input type="radio" name="Entry Point" value="3"><lable><font color=black>High</lable>
+      <input type="radio" name="Entry Point" value="1"><lable><font color=black>Avg</lable>
+      <input type="radio" name="Entry Point" value="0"><lable><font color=black>Low</lable>
+<br><br>
+
+    <lable><font color=black>Red Flag : </lable>
+        <input type="radio" name="Red Flag" value="3"><lable><font color=black>High</lable>
+      <input type="radio" name="Red Flag" value="1"><lable><font color=black>Avg</lable>
+      <input type="radio" name="Red Flag" value="0"><lable><font color=black>Low</lable>
+<br><br>
+
+   <lable><font color=black>PE Ratio</font></lable>
+      <br><input type="text" name="PE Ratio" required><br><br>
+         <lable><font color=black>Sector PE Ratio</font></lable>
+      <br><input type="text" name="Sector PE Ratio" required><br><br>
+      
+         <lable><font color=black>PB Ratio</font></lable>
+      <br><input type="text" name="PB Ratio" required><br><br>
+         <lable><font color=black>Sector PB Ratio</font></lable>
+      <br><input type="text" name="Sector PB Ratio" required><br><br>
+      
+         <lable><font color=black>Debt to Equite Ratio</font></lable>
+      <br><input type="text" name="Debt to Equite Ratio" required><br><br>
+         <lable><font color=black>Debt to Equite Ratio Industry average</font></lable>
+      <br><input type="text" name="Debt to Equite Ratio Industry average" required><br><br>
+      
+               <lable><font color=black>Current Ratio</font></lable>
+      <br><input type="text" name="Current Ratio" required><br><br>
+         <lable><font color=black>Current Ratio Industry Average</font></lable>
+      <br>
+      <input type="text" name="Current Ratio Industry Average" required><br><br><br>
+      
+          <lable><font color=black>Industry Revenue Growth : </lable><br><br>
+        <input type="radio" name="Industry Revenue Growth" value="2"><lable><font color=black>High/Increasing</lable>
+      <input type="radio" name="Industry Revenue Growth" value="1"><lable><font color=black>Avg</lable>
+      <input type="radio" name="Industry Revenue Growth" value="0"><lable><font color=black>Low</lable>
+<br><br><br>
+<lable><font color=black>Decreasing/increasing Rate Industry Revenue Growth</font></lable>
+      <br><input type="text" name="Decreasing/increasing Rate Industry Revenue Growth" required><br><br><br>
+      
+        <lable><font color=black>Market Share : </lable><br><br>
+        <input type="radio" name="Market Share" value="2"><lable><font color=black>High/Increasing</lable>
+      <input type="radio" name="Market Share" value="1"><lable><font color=black>Avg</lable>
+      <input type="radio" name="Market Share" value="0"><lable><font color=black>Low</lable>
+<br><br><br>
+<lable><font color=black>Decreasing/increasing Rate Market Share</font></lable>
+      <br><input type="text" name="Decreasing/increasing Rate Market Share" required><br><br><br>
+      
+      <lable><font color=black>Net Income</font></lable>
+      <br><input type="text" name="Net Income" required><br><br><br>
+      
+      <lable><font color=black>Total Assets</font></lable>
+      <br><input type="text" name="Total Assets" required><br><br><br>
+      
+      <lable><font color=black>Total Libilities</font></lable>
+      <br><input type="text" name="Total Libilities" required><br><br><br>
+      
+      <lable><font color=black>Free Cash Flow Rate</font></lable>
+      <br><input type="text" name="Free Cash Flow Rate" required><br><br><br>
+      
+        <lable><font color=black>Free Cash Flow Average Rate</font></lable>
+      <br><input type="text" name="Free Cash Flow Average Rate" required><br><br><br>
+      
+       <lable><font color=black>Valution According Rivel Compines : </lable><br><br>
+        <input type="radio" name="Valution According Rivel Compines" value="5"><lable><font color=black>High/Top</lable>
+      <input type="radio" name="Valution According Rivel Compines" value="2.5"><lable><font color=black>Middle/Avg</lable>
+      <input type="radio" name="Valution According Rivel Compines" value="0"><lable><font color=black>Bottom/Low</lable>
+<br><br><br>
+
+<lable><font color=black>Promoter Holding Trend : </lable><br><br>
+        <input type="radio" name="Promoter Holding Trend" value="5"><lable><font color=black>High/Increasing</lable>
+      <input type="radio" name="Promoter Holding Trend" value="2.5"><lable><font color=black>Avg</lable>
+      <input type="radio" name="Promoter Holding Trend" value="1"><lable><font color=black>Low</lable>
+      <input type="radio" name="Promoter Holding Trend" value="0"><lable><font color=black>Constant</lable>
+<br><br><br>
+
+ <lable><font color=black>Promoter Holding Trend Rate</font></lable>
+      <br><input type="text" name="Promoter Holding Trend Rate" required><br><br><br>
+      
+<lable><font color=black>Pledge Holding Trend : </lable><br><br>
+        <input type="radio" name="Pledge Holding Trend" value="5"><lable><font color=black>High/Increasing</lable>
+      <input type="radio" name="Pledge Holding Trend" value="2.5"><lable><font color=black>Avg</lable>
+      <input type="radio" name="Pledge Holding Trend" value="1"><lable><font color=black>Low</lable>
+      <input type="radio" name="Pledge Holding Trend" value="0"><lable><font color=black>Constant</lable>
+<br><br><br>
+
+<lable><font color=black>Mutual Fund And Forign Institutions Enter or Not : </lable><br><br>
+        <input type="radio" name="Mutual Fund And Forign Institutions Enter or Not" value="10"><lable><font color=black>Yes</lable>
+      <input type="radio" name="Mutual Fund And Forign Institutions Enter or Not" value="0"><lable><font color=black>No</lable>
+     
+<br><br><br>
+      
+      <lable><font color=black>Foreign Institutional Holding Trend : </lable><br><br>
+        <input type="radio" name="Foreign Institutional Holding Trend" value="5"><lable><font color=black>High/Increasing</lable>
+      <input type="radio" name="Foreign Institutional Holding Trend" value="2.5"><lable><font color=black>Avg</lable>
+      <input type="radio" name="Foreign Institutional Holding Trend" value="1"><lable><font color=black>Low</lable>
+      <input type="radio" name="Foreign Institutional Holding Trend" value="0"><lable><font color=black>Constant</lable>
+<br><br><br>
+
+ <lable><font color=black>Foreign Institutional Holding Trend Rate</font></lable>
+      <br><input type="text" name="Foreign Institutional Holding Trend Rate" required><br><br><br>
+      
+          <lable><font color=black>Mutual Fund Holding Trend : </lable><br><br>
+        <input type="radio" name="Mutual Fund Holding Trend" value="5"><lable><font color=black>High/Increasing</lable>
+      <input type="radio" name="Mutual Fund Holding Trend" value="2.5"><lable><font color=black>Avg</lable>
+      <input type="radio" name="Mutual Fund Holding Trend" value="1"><lable><font color=black>Low</lable>
+      <input type="radio" name="Mutual Fund Holding Trend" value="0"><lable><font color=black>Constant</lable>
+<br><br><br>
+
+ <lable><font color=black>Mutual Fund Holding Trend Rate</font></lable>
+      <br><input type="text" name="Mutual Fund Holding Trend Rate" required><br><br><br>
+      
+          <lable><font color=black>Retail & Other Holding Trend : </lable><br><br>
+        <input type="radio" name="Retail & Other Holding Trend" value="4"><lable><font color=black>High/Increasing</lable>
+      <input type="radio" name="Retail & Other Holding Trend" value="2"><lable><font color=black>Avg</lable>
+      <input type="radio" name="Retail & Other Holding Trend" value="1"><lable><font color=black>Low</lable>
+      <input type="radio" name="Retail & Other Holding Trend" value="0"><lable><font color=black>Constant</lable>
+<br><br><br>
+
+ <lable><font color=black>Retail & Other Holding Trend Rate</font></lable>
+      <br><input type="text" name="Retail & Other Holding Trend Rate" required><br><br><br>
+      
+                <lable><font color=black>Market grip : </lable><br><br>
+        <input type="radio" name="Market grip" value="3"><lable><font color=black>High/Monopoly</lable>
+      <input type="radio" name="Market grip" value="1.5"><lable><font color=black>Avg</lable>
+      <input type="radio" name="Market grip" value="0"><lable><font color=black>Low</lable>
+<br><br><br>
+
+ <lable><font color=black>Date</font></lable>
+      <br><input type="Date" name="Date" required><br><br><br>
+
+ <lable><font color=black>Time</font></lable>
+      <br><input type="Time" name="Time" required><br><br><br>
+          </form>
+          <span id="success"></span>
+           <button>Submit</button><br><br>
+<span id="success"></span>
+<button onclick="Logout()">Logout</button>
+<a href="https://docs.google.com/spreadsheets/d/1MnSq5BkzVA6i_2PpjXnbgR5gjqRJUO77rSVWpPKLKWM/edit?usp=drivesdk">
+  <button> Find Data</button>
+</a>
+<div id="c">
+  Subhom
+</div>
+          </div>
+</body>
+<script src="5.js"></script>
+</html>
