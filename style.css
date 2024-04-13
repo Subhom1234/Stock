@@ -41,3 +41,7 @@ button:hover{
 #BUY_SELL_BUTTON:hover{
   transform: scale(1.5);
 }
+#contact{
+  text-align: left;
+  margin-left: 4%;
+}
