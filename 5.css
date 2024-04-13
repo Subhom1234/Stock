@@ -76,3 +76,48 @@ a{
 h5{
   color: #E01717E3;
 }
+
+#colorjs{
+  border-radius: 50px;
+  margin-top: 2vh;
+  margin-bottom: 3vh;
+  width: 50%;
+  background-color: #FF0000;
+  padding: 2vh;
+  color: white;
+  display: none;
+  
+}
+#colorjs1 {
+  border-radius: 50px;
+  margin-top: 2vh;
+  margin-bottom: 3vh;
+  width: 50%;
+  background-color: #FFFC00;
+  padding: 2vh;
+  color: black;
+  display: none;
+
+}
+#colorjs2 {
+  border-radius: 50px;
+  margin-top: 2vh;
+  margin-bottom: 3vh;
+  width: 50%;
+  background-color: #007800;
+  padding: 2vh;
+  color: white;
+  display: none;
+
+}
+#colorjs3 {
+  border-radius: 50px;
+  margin-top: 2vh;
+  margin-bottom: 3vh;
+  width: 50%;
+  background-color: #007800;
+  padding: 2vh;
+  color: white;
+  display: none;
+
+}
