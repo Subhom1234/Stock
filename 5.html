@@ -78,25 +78,25 @@
 <br><br>
 
    <lable><font color=black>PE Ratio</font></lable>
-      <br><input type="text" name="PE Ratio" required><br><br>
+      <br><input type="text" name="PE Ratio" id="PE Ratio" required><br><br>
          <lable><font color=black>Sector PE Ratio</font></lable>
-      <br><input type="text" name="Sector PE Ratio" required><br><br>
+      <br><input type="text" name="Sector PE Ratio" id="Sector PE Ratio" required><br><br>
       
          <lable><font color=black>PB Ratio</font></lable>
-      <br><input type="text" name="PB Ratio" required><br><br>
+      <br><input type="text" name="PB Ratio" id="PB Ratio" required><br><br>
          <lable><font color=black>Sector PB Ratio</font></lable>
-      <br><input type="text" name="Sector PB Ratio" required><br><br>
+      <br><input type="text" name="Sector PB Ratio" id="Sector PB Ratio" required><br><br>
       
          <lable><font color=black>Debt to Equite Ratio</font></lable>
-      <br><input type="text" name="Debt to Equite Ratio" required><br><br>
+      <br><input type="text" name="Debt to Equite Ratio" id="Debt to Equite Ratio" required><br><br>
          <lable><font color=black>Debt to Equite Ratio Industry average</font></lable>
-      <br><input type="text" name="Debt to Equite Ratio Industry average" required><br><br>
+      <br><input type="text" name="Debt to Equite Ratio Industry average" id="Debt to Equite Ratio Industry average" required><br><br>
       
                <lable><font color=black>Current Ratio</font></lable>
-      <br><input type="text" name="Current Ratio" required><br><br>
+      <br><input type="text" name="Current Ratio" id="Current Ratio" required><br><br>
          <lable><font color=black>Current Ratio Industry Average</font></lable>
       <br>
-      <input type="text" name="Current Ratio Industry Average" required><br><br><br>
+      <input type="text" name="Current Ratio Industry Average" id="Current Ratio Industry Average" required><br><br><br>
       
           <lable><font color=black>Industry Revenue Growth : </lable><br><br>
         <input type="radio" name="Industry Revenue Growth" value="2"><lable><font color=black>High/Increasing</lable>
@@ -115,19 +115,19 @@
       <br><input type="text" name="Decreasing/increasing Rate Market Share" required><br><br><br>
       
       <lable><font color=black>Net Income</font></lable>
-      <br><input type="text" name="Net Income" required><br><br><br>
+      <br><input type="text" name="Net Income" id="Net Income" required><br><br><br>
       
       <lable><font color=black>Total Assets</font></lable>
-      <br><input type="text" name="Total Assets" required><br><br><br>
+      <br><input type="text" name="Total Assets" id="Total Assets" required><br><br><br>
       
       <lable><font color=black>Total Libilities</font></lable>
-      <br><input type="text" name="Total Libilities" required><br><br><br>
+      <br><input type="text" name="Total Libilities" id="Total Libilities" required><br><br><br>
       
       <lable><font color=black>Free Cash Flow Rate</font></lable>
-      <br><input type="text" name="Free Cash Flow Rate" required><br><br><br>
+      <br><input type="text" name="Free Cash Flow Rate" id="Free Cash Flow Rate" required><br><br><br>
       
         <lable><font color=black>Free Cash Flow Average Rate</font></lable>
-      <br><input type="text" name="Free Cash Flow Average Rate" required><br><br><br>
+      <br><input type="text" name="Free Cash Flow Average Rate" id="Free Cash Flow Average Rate" required><br><br><br>
       
        <lable><font color=black>Valution According Rivel Compines : </lable><br><br>
         <input type="radio" name="Valution According Rivel Compines" value="5"><lable><font color=black>High/Top</lable>
@@ -194,20 +194,42 @@
       <input type="radio" name="Market grip" value="0"><lable><font color=black>Low</lable>
 <br><br><br>
 
-             <lable><font color=black>1 Year Return</font></lable>
-      <br><input type="text" name="1 Year Return" required><br><br><br>
-            <lable><font color=black>5 Year Return</font></lable>
-      <br><input type="text" name="5 Year Return" required><br><br><br>
-            
-            
+ <lable><font color=black>1 Year Return</font></lable>
+      <br><input type="text" name="1 Year Return" id="1 Year" required><br><br><br>
+
+ <lable><font color=black>5 Year Return</font></lable>
+      <br><input type="text" name="5 Year Return" id="5 Year" required><br><br><br>
+
  <lable><font color=black>Date</font></lable>
       <br><input type="Date" name="Date" required><br><br><br>
 
  <lable><font color=black>Time</font></lable>
       <br><input type="Time" name="Time" required><br><br><br>
+               <!--check Data through js-->
+               
+
+               <!--Continue-->
+
           </form>
-          <span id="success"></span><br>
-           <button>Submit</button><br><br></div>
+        <span id="success"></span><br><br>
+           
+                   <button onclick="success()">Submit</button><br><br>
+                   
+                   </div>
+    <center>
+      <div id="colorjs">
+        <p id="res"><b></b></p>
+      </div>
+      <div id="colorjs1">
+        <p id="res1"><b></b></p>
+      </div>
+      <div id="colorjs2">
+        <p id="res2"><b></b></p>
+      </div>
+      <div id="colorjs3">
+        <p id="res3"><b></b></p>
+      </div>
+    </center>
 
 <button onclick="Logout()">Logout</button>
 <a href="https://docs.google.com/spreadsheets/d/1MnSq5BkzVA6i_2PpjXnbgR5gjqRJUO77rSVWpPKLKWM/edit?usp=drivesdk">
@@ -222,4 +244,5 @@
           </div>
 </body>
 <script src="encryption.js"></script>
-                                                                                     </html>
+<script src="14.js"></script>
+        </html>
