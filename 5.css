@@ -80,7 +80,7 @@ h5{
 #colorjs{
   border-radius: 50px;
   margin-top: 2vh;
-  margin-bottom: 3vh;
+  margin-bottom: 4vh;
   width: 50%;
   background-color: #FF0000;
   padding: 2vh;
@@ -91,7 +91,7 @@ h5{
 #colorjs1 {
   border-radius: 50px;
   margin-top: 2vh;
-  margin-bottom: 3vh;
+  margin-bottom: 4vh;
   width: 50%;
   background-color: #FFFC00;
   padding: 2vh;
@@ -102,7 +102,7 @@ h5{
 #colorjs2 {
   border-radius: 50px;
   margin-top: 2vh;
-  margin-bottom: 3vh;
+  margin-bottom: 4vh;
   width: 50%;
   background-color: #007800;
   padding: 2vh;
@@ -113,7 +113,7 @@ h5{
 #colorjs3 {
   border-radius: 50px;
   margin-top: 2vh;
-  margin-bottom: 3vh;
+  margin-bottom: 4vh;
   width: 50%;
   background-color: #007800;
   padding: 2vh;
@@ -121,3 +121,7 @@ h5{
   display: none;
 
 }
+#contact{
+  text-align: left;
+  margin-left: 4%;
+    }
