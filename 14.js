@@ -320,27 +320,32 @@ else if (result6 >= 300) {
     
     console.log("calculation output100 : "+result100);
     console.log("calculation output5 : "+result5);
+    var persentage;
+    
+         persentage=(c*100)/141;
+         console.log("Persentage:- " +persentage);
+    
     var grade;
-    if (c<51) {
+    if (persentage<45) {
       grade="Very High Risky ";
       document.getElementById('colorjs').style.display = 'block';
       document.getElementById('colorjs1').style.display = 'none';
       document.getElementById('colorjs2').style.display = 'none';
       document.getElementById('colorjs3').style.display = 'none';
       
-      document.getElementById('res').textContent= "Result : " + c + " ( " + grade + ") " ;
+      document.getElementById('res').textContent= "Result : " + persentage + "% ( " + grade + ") " ;
       
     }
-    else if (c<66) {
+    else if (persentage<70) {
       grade="High Risky ";
       document.getElementById('colorjs1').style.display = 'block';
       document.getElementById('colorjs').style.display = 'none';
       document.getElementById('colorjs2').style.display = 'none';
       document.getElementById('colorjs3').style.display = 'none';
-      document.getElementById('res1').textContent= "Result : " + c + " ( " + grade + ") " ;
+      document.getElementById('res1').textContent= "Result : " + persentage + "% ( " + grade + ") " ;
       
     }
-        else if (c < 86) {
+        else if (persentage < 80) {
           grade = "Risky ";
 document.getElementById('colorjs2').style.display = 'block';
 
@@ -348,16 +353,16 @@ document.getElementById('colorjs1').style.display = 'none';
 document.getElementById('colorjs').style.display = 'none';
 document.getElementById('colorjs3').style.display = 'none';
 
-document.getElementById('res2').textContent= "Result : " + c + " ( " + grade + ") " ;
+document.getElementById('res2').textContent= "Result : " + persentage + "% ( " + grade + ") " ;
 
         }
-        else if (c>=86) {
+        else if (persentage>=80) {
           grade = "Good For Buy ";
           document.getElementById('colorjs3').style.display = 'block';
           document.getElementById('colorjs1').style.display = 'none';
           document.getElementById('colorjs2').style.display = 'none';
           document.getElementById('colorjs').style.display = 'none';
-          document.getElementById('res3').textContent= "Result : " + c + " ( " + grade + ") " ;
+          document.getElementById('res3').textContent= "Result : " + persentage + "% ( " + grade + ") " ;
         }
     
     
