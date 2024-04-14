@@ -336,7 +336,7 @@ else if (result6 >= 300) {
       document.getElementById('res').textContent= "Result : " + persentage + "% ( " + grade + ") " ;
       
     }
-    else if (persentage<70) {
+    else if (persentage<60) {
       grade="High Risky ";
       document.getElementById('colorjs1').style.display = 'block';
       document.getElementById('colorjs').style.display = 'none';
