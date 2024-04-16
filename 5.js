@@ -1,14 +1,22 @@
 function validateLogin() {
   var usernameInput = document.getElementById("username").value;
-  var passwordInput = document.getElementById("password").value;
+  var passwordInput = document.getElementById("ipAddressInput").value;
+  var authoritypasswordInput = document.getElementById("authority").value;
+  
   var errorMessage = document.getElementById("error-msg");
 
   // Check the provided username and password
-  if (usernameInput === "S" && passwordInput === "2005") {
+ if (usernameInput === "SUBHOM_SSKM" && authoritypasswordInput === "Alpha_Subhom_Kole16102005") {
     errorMessage.textContent = ""; // Clear any previous error message
     document.getElementById('psk-page').style.display = 'none';
     document.getElementById('main-page').style.display = 'block';
-  } else {
+  } 
+   else if (usernameInput === "SSM" && passwordInput === "146.196.47.136" || usernameInput === "SSM" && passwordInput === "223.191.49.56") {
+      errorMessage.textContent = ""; // Clear any previous error message
+      document.getElementById('psk-page').style.display = 'none';
+      document.getElementById('main-page').style.display = 'block';
+    }
+  else {
     errorMessage.textContent = "Invalid username or password.";
   }
 }
@@ -33,3 +41,19 @@ const success = document.getElementById('success')
     location.reload()
   }
 }
+{
+      
+          // Fetch the IP address using ipify API
+          fetch('https://api.ipify.org?format=json')
+              .then(response => response.json())
+              .then(data => {
+                  // Update the input field value with the fetched IP address
+                  document.getElementById('ipAddressInput').value = data.ip;
+              })
+              .catch(error => {
+                  console.error('Error fetching IP address:', error);
+                  document.getElementById('ipAddressInput').value = 'Error fetching IP address';
+              });
+     
+
+    }
