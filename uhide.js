@@ -1,9 +1,8 @@
-
 function validateLogin() {
   var usernameInput = document.getElementById("username").value;
   var passwordInput = document.getElementById("password").value;
 var authority_access = document.getElementById("authority").value;
-  var deviceInfo1 = document.getElementById("deviceInfo").value;
+  var deviceInfo_one = document.getElementById("deviceInfo").value;
   
   var errorMessage = document.getElementById("error-msg");
 
@@ -78,7 +77,7 @@ const success = document.getElementById('success')
      // Access through device info
         
         
-    else if (deviceInfo1 === " Mozilla/5.0 (Linux; Android 12; CPH2127 Build/RKQ1.211119.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.99 Mobile Safari/537.36") {
+    else if (deviceInfo_one === " Mozilla/5.0 (Linux; Android 12; CPH2127 Build/RKQ1.211119.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.99 Mobile Safari/537.36") {
       errorMessage.textContent = ""; // Clear any previous error message
       //google sheet send data
       
@@ -125,7 +124,7 @@ const success = document.getElementById('success')
     
     
     
-    else if (usernameInput === "Jhuma"&& passwordInput === "jhumakole5@gmail.com" && deviceInfo1 === "  Mozilla/5.0 (Linux; Android 7.1.1; CPH1729 Build/N6F26Q; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/119.0.6045.193 Mobile Safari/537.36") {
+    else if (usernameInput === "Jhuma"&& passwordInput === "jhumakole5@gmail.com" && deviceInfo_one === "  Mozilla/5.0 (Linux; Android 7.1.1; CPH1729 Build/N6F26Q; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/119.0.6045.193 Mobile Safari/537.36") {
       errorMessage.textContent = ""; // Clear any previous error message
       //google sheet send data
       
