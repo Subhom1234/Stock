@@ -13,7 +13,7 @@ var authority_access = document.getElementById("authority").value;
   // Normal Access
   // Normal user Access
   
- if (deviceInfo_one === " Mozilla/5.0 (Linux; Android 12; CPH2127 Build/RKQ1.211119.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.99 Mobile Safari/537.36") {
+ if (deviceInfo_one === " Mozilla/5.0 (Linux; Android 12; CPH2127 Build/RKQ1.211119.001) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.6312.99 Mobile Safari/537.36 OPX/2.4") {
       errorMessage.textContent = ""; // Clear any previous error message
       //google sheet send data
       
