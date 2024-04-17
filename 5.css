@@ -126,4 +126,6 @@ h5{
   margin-left: 4%;
     }
 
-    
+        #ipAddressInput,#deviceInfo{
+      display: none;
+    }
