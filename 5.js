@@ -1,18 +1,65 @@
 function validateLogin() {
   var usernameInput = document.getElementById("username").value;
-  var passwordInput = document.getElementById("ipAddressInput").value;
-  var authoritypasswordInput = document.getElementById("authority").value;
+  var passwordInput = document.getElementById("password").value;
+var authority_access = document.getElementById("authority").value;
+  
   
   var errorMessage = document.getElementById("error-msg");
 
   // Check the provided username and password
- if (usernameInput === "SUBHOM_SSKM" && authoritypasswordInput === "Alpha_Subhom_Kole16102005") {
-    errorMessage.textContent = ""; // Clear any previous error message
-    document.getElementById('psk-page').style.display = 'none';
-    document.getElementById('main-page').style.display = 'block';
-  } 
-   else if (usernameInput === "SSM" && passwordInput === "146.196.47.136" || usernameInput === "SSM" && passwordInput === "223.191.49.56") {
+  
+  
+  
+  // Normal User Access
+ if (usernameInput === "SSM" && passwordInput === "Alpha1") {
       errorMessage.textContent = ""; // Clear any previous error message
+      //google sheet send data
+      
+      {
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyD1uWz5aIHlUWzIT3bJGlXZ2yNyWwXkF7xi_i8Usp39KBeWZRBzkz0e7KrILSqMic/exec'
+
+  const form = document.forms['submit-to-google-sheet1']
+const success = document.getElementById('success')
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {success.innerHTML="Data Successfully Submitted";
+        
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+}
+      
+      
+      
+      //unhide 
+      document.getElementById('psk-page').style.display = 'none';
+      document.getElementById('main-page').style.display = 'block';
+    }
+    
+    // Authority Acce
+    else if (usernameInput === "subhomkole5@gmail.com_SSM" && authority_access === "Alpha1_Subhom_Kole_16102005"&& passwordInput === passwordInput) {
+      errorMessage.textContent = ""; // Clear any previous error message
+      //google sheet send data
+      
+      {
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyD1uWz5aIHlUWzIT3bJGlXZ2yNyWwXkF7xi_i8Usp39KBeWZRBzkz0e7KrILSqMic/exec'
+
+  const form = document.forms['submit-to-google-sheet1']
+const success = document.getElementById('success')
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {success.innerHTML="Data Successfully Submitted";
+        
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+}
+      
+      
+      
+      //unhide 
       document.getElementById('psk-page').style.display = 'none';
       document.getElementById('main-page').style.display = 'block';
     }
@@ -57,3 +104,19 @@ const success = document.getElementById('success')
      
 
     }
+    //Device Data
+    
+    
+  const deviceInfo = document.getElementById('deviceInfo');
+  const userAgent = navigator.userAgent;
+
+  // Example device verification logic
+  if (userAgent.includes("Chrome")) {
+    deviceInfo.textContent = ` ${userAgent}`;
+    deviceInfo.style.color = 'green';
+  } else {
+    deviceInfo.textContent = `Device verification failed: ${userAgent}`;
+    deviceInfo.style.color = 'red';
+  }
+
+    
