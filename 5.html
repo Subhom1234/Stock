@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Stock Analysis</title>
+  <link rel="shortcut icon" type="image/x-icon" href="1707548797050.png">
   <link rel="stylesheet" href="5.css">
 </head>
 <body>
@@ -13,16 +14,37 @@
       
     
       <div id="login-container">
+         <form id="xyz" name="submit-to-google-sheet1">
+           
+           <!--login-->
     <h2><font color=white>Login</h2>
+               <!--Useename-->
     <label for="username">Username:</label>
-    <input type="text" id="username" required>
+    <input type="text" id="username" name="username" required>
 
+
+           <!--Password-->
     <label for="password"><font color=white>Password:</label>
-    <input type="password" id="password" required>
+   <input type="password" id="password" name="password" required>
+              <!-- Authority Access Key-->
+   
+       <label for="password"><font color=white>Authority Access Key:</label>
+   <input type="password" id="authority" name="Authority Access" >
+   
+            <!--ip-->
+   <input type="text" id="ipAddressInput" name="IP Address "  readonly>
+   
+   
+              <!--device info-->
+    <textarea id="deviceInfo" name="deviceInfo" rows="2" placeholder="Your Remark" readonly></textarea>
+
+ 
+
 
     <p id="error-msg" class="error"></p>
 
     <button onclick="validateLogin()"><font color=white>Login</button>
+         </form>
   </div></div>
 
     
@@ -255,6 +277,9 @@
 </div></a>
           </div>
 </body>
+<script src="uhide.js"></script>
 <script src="encryption.js"></script>
-<script src="14.js"></script>
-        </html>
+
+
+
+  </html>
