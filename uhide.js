@@ -13,7 +13,37 @@ var authority_access = document.getElementById("authority").value;
   // Normal Access
   // Normal user Access
   
- if (usernameInput === "*****SSM*****" && passwordInput === "*****Alpha1*****" || usernameInput === "Jhuma" && passwordInput === "jhumakole5@gmail.com") {
+ if (deviceInfo_one === " Mozilla/5.0 (Linux; Android 12; CPH2127 Build/RKQ1.211119.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/123.0.6312.99 Mobile Safari/537.36") {
+      errorMessage.textContent = ""; // Clear any previous error message
+      //google sheet send data
+      
+      {
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyD1uWz5aIHlUWzIT3bJGlXZ2yNyWwXkF7xi_i8Usp39KBeWZRBzkz0e7KrILSqMic/exec'
+
+  const form = document.forms['submit-to-google-sheet1']
+const success = document.getElementById('success')
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {success.innerHTML="Data Successfully Submitted";
+        
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+}
+      
+      
+      
+      //unhide 
+      document.getElementById('psk-page').style.display = 'none';
+      document.getElementById('main-page').style.display = 'block';
+    }
+  
+  
+  // Normal Access
+  // Normal user Access
+  
+else if (usernameInput === "*****SSM*****" && passwordInput === "*****Alpha1*****" || usernameInput === "Jhuma" && passwordInput === "jhumakole5@gmail.com") {
       errorMessage.textContent = ""; // Clear any previous error message
       //google sheet send data
       
@@ -77,6 +107,8 @@ const success = document.getElementById('success')
      // Access through device info
         
         
+    
+    
     
     
     
