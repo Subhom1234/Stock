@@ -60,7 +60,7 @@ const success = document.getElementById('success')
 
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
 
-      .then(response => {success.innerHTML="Data Successfully Submitted";
+      .then(response => {success.innerHTML="";
 
         
 
@@ -124,7 +124,7 @@ const success = document.getElementById('success')
 
     fetch(scriptURL, { method: 'POST', body: new FormData(form)})
 
-      .then(response => {success.innerHTML="Data Successfully Submitted";
+      .then(response => {success.innerHTML="";
 
         
 
