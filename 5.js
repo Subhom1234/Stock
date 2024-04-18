@@ -178,7 +178,7 @@ const success = document.getElementById('success')
 
 }
 
-{
+function success(){
 
   const scriptURL = 'https://script.google.com/macros/s/AKfycbw7elEk9mmqAL0fxXxPqXv9ItbCcPy5lUfDN2WHUIKByMtiDBr0pEun5XtIlbCbPlVV/exec'
 
